@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import { guessLetter } from '../actions/game'
 import { gameFinished } from '../lib/game'
+import './Form.css'
 
 class Form extends PureComponent {
   static propTypes = {
