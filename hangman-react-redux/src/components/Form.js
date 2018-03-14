@@ -16,8 +16,8 @@ class Form extends PureComponent {
     const guess = x.target.value
     x.target.value = null
     const { guesses, guessLetter } = this.props
-    const lowerGuess = guess.toLowerCase().replace(/[^a-z]/g, '')
-    if (guesses.indexOf(lowerGuess) === -1 && lowerGuess !== "") guessLetter(lowerGuess)
+    const Guess = guess.toLowerCase()
+    if (guesses.indexOf(Guess) === -1 && Guess !== "") guessLetter(Guess)
   }
 
   render() {
@@ -29,7 +29,7 @@ class Form extends PureComponent {
     return (
       <div className="Form">
         <form>
-          <input type="text" maxLength="1" className="Form"  placeholder="letter" onChange={e => this.handleSubmit.bind(this)(e)} />
+          <input type="text" maxLength="1" className="Form"  placeholder="letter" onChange={x => this.handleSubmit.bind(this)(x)} />
         </form>
       </div>
     )

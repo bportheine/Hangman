@@ -1,19 +1,20 @@
+//Not all guesses, just wrong guesses
 export const wrongGuessCount = (word, guesses) => {
   return guesses.filter(guess => word.indexOf(guess) < 0).length
 }
-
+//limiting how many guesses
 export const wrongGuessLimit = (word, guesses) => {
   return wrongGuessCount(word, guesses) >= 6
 }
-
+//rebuilding word for showing
 export const showGuess = (word, guesses) => {
   return word.split('').map(letter => (guesses.indexOf(letter) < 0) ? "_" : letter).join(" ");
 }
-
+//parameters to winning
 export const isWinner = (word, guesses) => {
   return showGuess(word, guesses) === word.split('').join(' ')
 }
-
+//parameters for losing
 export const gameFinished = (word, guesses) => {
   return (wrongGuessLimit(word, guesses) || isWinner(word, guesses))
 }

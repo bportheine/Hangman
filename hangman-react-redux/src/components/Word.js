@@ -15,8 +15,8 @@ class Word extends PureComponent {
     return (
       <div className="Status">
         <h2>{ showGuess(word, guesses) }</h2>
-        <h3>Wrong guesses: <span>{wrongGuessCount(word, guesses)}</span></h3>
-        <h3>All guesses: <span>{guesses.join(", ")}</span></h3>
+        <h3>Wrong Guess Count: <span>{wrongGuessCount(word, guesses)}</span></h3>
+        <h3>Guesses: <span>{guesses.join(", ")}</span></h3>
       </div>
     )
   }
