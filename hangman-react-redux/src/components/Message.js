@@ -16,7 +16,7 @@ class Message extends PureComponent {
     if (isWinner(word, guesses))
       return <h2 className="Message">You survived!</h2>
     if (wrongGuessLimit(word, guesses))
-      return <h2 className="Message">You died. The answer was: {word}</h2>
+      return <h2 className="Message">You died. The answer was: <span>{word}</span></h2>
     return null
   }
 
@@ -26,5 +26,4 @@ class Message extends PureComponent {
 }
 
 const mapStateToProps = ({ word, guesses }) => ({ word, guesses })
-
 export default connect(mapStateToProps)(Message)

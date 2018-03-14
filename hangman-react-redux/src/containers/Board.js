@@ -28,5 +28,4 @@ class Board extends PureComponent {
 }
 
 const mapStateToProps = ({ word, guesses }) => ({ word, guesses })
-
 export default connect(mapStateToProps)(Board)

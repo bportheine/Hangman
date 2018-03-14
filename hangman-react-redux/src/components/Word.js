@@ -13,15 +13,14 @@ class Word extends PureComponent {
   render() {
     const { word, guesses } = this.props
     return (
-      <div className="game-info">
+      <div className="Status">
         <h2>{ showGuess(word, guesses) }</h2>
-        <h3>Wrong guesses: {wrongGuessCount(word, guesses)}</h3>
-        <h3>All guesses: {guesses.join(", ")}</h3>
+        <h3>Wrong guesses: <span>{wrongGuessCount(word, guesses)}</span></h3>
+        <h3>All guesses: <span>{guesses.join(", ")}</span></h3>
       </div>
     )
   }
 }
 
 const mapStateToProps = ({ word, guesses }) => ({ word, guesses })
-
 export default connect(mapStateToProps)(Word)

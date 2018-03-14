@@ -7,7 +7,7 @@ export const guessLetter = (guess) => {
   }
 }
 
-export const startNewGame = (newWord) => {
+export const NewGame = (newWord) => {
   return {
     type: NEW_GAME,
     newWord
