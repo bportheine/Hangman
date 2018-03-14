@@ -19,7 +19,6 @@ export const gameFinished = (word, guesses) => {
 }
 
 export const wordList = [
-  // Borrowed from xkcd password generator which borrowed it from wherever
   "ability","able","aboard","about","above","accept","accident","according",
   "account","accurate","acres","across","act","action","active","activity",
   "actual","actually","add","addition","additional","adjective","adult","adventure",

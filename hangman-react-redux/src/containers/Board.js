@@ -5,6 +5,7 @@ import Word from '../components/Word'
 import Form from '../components/Form'
 import Message from '../components/Message'
 import TheMan from '../components/TheMan'
+import NewGameButton from '../components/NewGameButton'
 import './Board.css'
 
 class Board extends PureComponent {
@@ -16,10 +17,11 @@ class Board extends PureComponent {
   render() {
     return (
       <div className="Board">
-        <Message />
         <TheMan />
         <Word />
         <Form />
+        <Message />
+        <NewGameButton />
       </div>
     )
   }

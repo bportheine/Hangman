@@ -13,8 +13,10 @@ class Message extends PureComponent {
   renderMessage = () => {
     const { word, guesses } = this.props
 
-    if (isWinner(word, guesses)) return <h2 className="Message">We have a winner!</h2>
-    if (wrongGuessLimit(word, guesses)) return <h2 className="Message">Sorry. The answer was: {word}.</h2>
+    if (isWinner(word, guesses))
+      return <h2 className="Message">You survived!</h2>
+    if (wrongGuessLimit(word, guesses))
+      return <h2 className="Message">You died. The answer was: {word}</h2>
     return null
   }
 

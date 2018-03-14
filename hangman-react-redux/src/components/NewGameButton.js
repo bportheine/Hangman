@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import { startNewGame } from '../actions/game'
 import { randomWord, gameFinished } from '../lib/game'
+import './NewGameButton.css'
 
 class NewGameButton extends PureComponent {
   static propTypes = {
