@@ -17,7 +17,8 @@ class Message extends PureComponent {
       return <h2 className="Message">You survived!</h2>
     if (wrongGuessLimit(word, guesses))
       return <h2 className="Message">You died. The answer was: <span>{word}</span></h2>
-    return null
+    else
+      return null
   }
 
   render() {

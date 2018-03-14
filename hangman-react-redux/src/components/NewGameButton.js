@@ -19,11 +19,12 @@ class NewGameButton extends PureComponent {
   render() {
     const { word, guesses } = this.props
 
-    if (!gameFinished(word, guesses)) return null
-
-    return (
-      <button className="New-Game" onClick={this.handleOnClick}>New Game</button>
-    )
+    if (!gameFinished(word, guesses))
+      return null
+    else
+      return (
+        <button className="NewGame" onClick={this.handleOnClick}>New Game</button>
+      )
   }
 }
 

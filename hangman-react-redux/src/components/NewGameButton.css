@@ -1,4 +1,4 @@
-.New-Game {
+.NewGame {
   background-color: #ff7043;
   border: none;
   color: white;
@@ -9,6 +9,6 @@
   font-size: 16px;
 }
 
-.New-Game:focus {
+.NewGame:focus {
 	outline-color: #00bfa5;
 }
