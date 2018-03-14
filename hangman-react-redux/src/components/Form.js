@@ -29,7 +29,7 @@ class Form extends PureComponent {
     return (
       <div className="Form">
         <form onSubmit={x => x.preventDefault()} >
-          <input type="text" maxLength="1" className="Form"  onChange={e => this.handleSubmit.bind(this)(e)} />
+          <input type="text" maxLength="1" className="Form"  placeholder="letter" onChange={e => this.handleSubmit.bind(this)(e)} />
         </form>
       </div>
     )
